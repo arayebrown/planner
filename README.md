@@ -1,4 +1,4 @@
-preparation-a
+Planner
 =============
 
-preparation_a
+If getting there is half the fun, planning part of which half?
