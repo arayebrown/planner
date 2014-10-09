@@ -1,4 +1,4 @@
 Planner
 =============
 
-If getting there is half the fun, planning part of which half?
+If getting there is half the fun, planning is part of which half?
