@@ -25,6 +25,11 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    // Allows the ember serve express server to request images safely
+    ENV.contentSecurityPolicy = {
+      'img-src': "'self' *.tile.osm.org"
+    };
   }
 
   if (environment === 'test') {
