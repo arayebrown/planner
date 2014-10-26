@@ -2,6 +2,7 @@
 import Ember from 'ember';
 
 export default Ember.View.extend({
+  classNames: ['map-container'],
   home: [47.9102109,-122.54569],
   templateName: 'map',
   didInsertElement: function() {

@@ -2,11 +2,16 @@
 @import 'bower_components/foundation/scss/foundation/functions';
 @import 'bower_components/foundation/scss/foundation';
 
-#map {
-  height:100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width:100%;
-  z-index: -10;
+html, body {
+  height: 100%;
+}
+
+body {
+  div:first-of-type {
+    min-height: 100%;
+  }
+}
+
+.map-container {
+  height: 350px;
 }

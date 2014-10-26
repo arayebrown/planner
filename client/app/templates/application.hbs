@@ -1,3 +1,14 @@
-<h1 id='title'>Trippy, the App</h1>
-{{#link-to 'trips'}}Go to trips list{{/link-to}}
-{{outlet}}
+<div data-magellan-expedition="fixed">
+  <dl class="sub-nav">
+    <dd data-magellan-arrival="home">{{#link-to 'index'}}Home{{/link-to}}</dd>
+    <dd data-magellan-arrival="map">{{#link-to 'map'}}Map{{/link-to}}</dd>
+    <dd data-magellan-arrival="trips">{{#link-to 'trips'}}Trips{{/link-to}}</dd>
+    </a></dd>
+  </dl>
+</div>
+<div class="row">
+  <div class="small-12 large-centered columns">
+    <h1 id='title'>Trippy, the App</h1>
+    {{outlet}}
+  </div>
+</div>
