@@ -19,5 +19,7 @@ var app = new EmberApp();
 
 app.import('bower_components/leaflet/dist/leaflet.js');
 app.import('bower_components/leaflet/dist/leaflet.css');
+app.import('bower_components/leaflet/dist/images/marker-icon-2x.png');
+app.import('bower_components/leaflet/dist/images/marker-shadow.png');
 
 module.exports = app.toTree();
