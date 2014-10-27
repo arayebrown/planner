@@ -1,14 +1,5 @@
 /* global Pretender */
-var TRIPS = [
-  {
-    id: 1,
-    name: 'Bob'
-  },
-  {
-    id: 2,
-    name: 'Sue'
-  }
-];
+import fixtures from '../utils/fixture-api';
 
 export default {
   name: 'fake-server',
@@ -16,7 +7,7 @@ export default {
     new Pretender(function() {
       this.get('/trips', function() {
         var all =  JSON.stringify(
-          {trips: TRIPS}
+          {trips: fixtures.TRIPS}
         );
         return [200, {"Content-Type": "application/json"}, all];
       });
