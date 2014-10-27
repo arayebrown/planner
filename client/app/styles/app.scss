@@ -10,6 +10,14 @@ body {
   div:first-of-type {
     min-height: 100%;
   }
+
+  .brand {
+    margin-left: 0;
+
+    a {
+      padding-left: 0;
+    }
+  }
 }
 
 .map-container {
