@@ -6,7 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('trips');
+  this.resource('trips', function() {
+    this.route('new');
+  });
   this.resource('map');
 });
 

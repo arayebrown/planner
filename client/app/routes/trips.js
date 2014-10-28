@@ -7,7 +7,7 @@ export default BaseRoute.extend({
   },
   actions: {
     createTrip: function() {
-      alert('Boom!');
+      this.transitionTo('trips.new');
     }
   }
 });
