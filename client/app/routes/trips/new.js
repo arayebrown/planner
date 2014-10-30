@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function() {
-    return this.get('store').createRecord('trip');
+    return this.get('store').createRecord('trip', {
+      fuelEfficiency: 17,
+      fuelCost: 3.15
+    });
   },
   actions: {
     save: function(model) {
