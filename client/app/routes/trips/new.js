@@ -8,12 +8,17 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    save: function(model) {
-      model.save();
+    save: function() {
+      this.get('controller.model').save();
       this.transitionTo('trips');
     },
+    cancel: function() {
+      this.get('controller.model').destroyRecord().then(function() {
+        this.transitionTo('trips');
+      }.bind(this));
+    },
     willTransition: function() {
-      this.get('currentModel').destroyRecord();
+      this.get('controller.model').destroyRecord();
     }
   }
 });
