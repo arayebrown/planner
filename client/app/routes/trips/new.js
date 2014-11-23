@@ -1,4 +1,5 @@
 import BaseRoute from '../base-route';
+import Utils from '../../utils/utils';
 
 export default BaseRoute.extend({
   title: 'Create a Trip',
@@ -10,7 +11,10 @@ export default BaseRoute.extend({
   },
   actions: {
     save: function() {
-      this.get('controller.model').save();
+      this.get('controller.model')
+        //setting a uuid while using mock pretender api
+        .set('id', Utils.uuidGenerator())
+        .save();
       this.transitionTo('trips');
     },
     cancel: function() {
