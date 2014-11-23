@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import BaseRoute from '../base-route';
 
-export default Ember.Route.extend({
+export default BaseRoute.extend({
+  title: 'Create a Trip',
   model: function() {
     return this.get('store').createRecord('trip', {
       fuelEfficiency: 17,

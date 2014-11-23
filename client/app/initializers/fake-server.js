@@ -9,7 +9,13 @@ export default {
         var all =  JSON.stringify(
           {trips: fixtures.TRIPS}
         );
-        return [200, {"Content-Type": "application/json"}, all];
+        return [200, {'Content-Type': 'application/json'}, all];
+      });
+
+      this.get('/trips/:id', function(request) {
+        return [200, {'Content-Type': 'application/json'}, JSON.stringify(
+          fixtures.TRIPS[request.params.id]
+        )];
       });
     });
   }

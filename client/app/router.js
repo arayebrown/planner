@@ -9,7 +9,7 @@ Router.map(function() {
   this.resource('trips', function() {
     this.route('new');
   });
-  this.resource('trip', { path: '/trip/:id' });
+  this.resource('trip', { path: '/trips/:id' });
   this.resource('map');
 });
 
