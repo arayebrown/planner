@@ -3,7 +3,7 @@
   <li><button {{action 'createTrip'}}>Create new trip</button></li>
 {{#each trip in controller}}
   {{#with trip}}
-  <li>{{#link-to 'trip' trip}}Name: {{name}},  Distance: {{distance}} miles, Cost: {{cost}}{{/link-to}}</li>
+  <li>{{#link-to 'trip' trip}}Name: {{name}}, Date: {{readable-date tripDate}}, Distance: {{distance}} miles, Cost: {{cost}}{{/link-to}}</li>
   {{/with}}
 {{/each}}
 </ul>
