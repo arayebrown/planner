@@ -2,15 +2,15 @@
 <div class="row">
   <div class="medium-6 columns">
     <label for='name'>Name
-      {{input name='name' value=name}}
+      {{input name='name' value=model.name}}
     </label>
     <label for='distance'>Distance
-      {{input name='distance' value=distance}}
+      {{input name='distance' value=model.distance}}
     </label>
     <label for='tripDate'>Start Date
-      {{input type='date' name='tripDate' value=tripDate}}
+      {{input type='date' name='tripDate' value=model.tripDate}}
     </label>
-    <button {{action 'save' this}} class="tiny">Save</button>
+    <button {{action 'save' model}} class="tiny">Save</button>
     <button {{action 'cancel'}} class="tiny secondary">Cancel</button>
   </div>
 </div>
