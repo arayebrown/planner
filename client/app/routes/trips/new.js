@@ -10,11 +10,9 @@ export default BaseRoute.extend({
     });
   },
   actions: {
-    save: function() {
-      this.get('controller.model')
+    saveTrip: function(model) {
         //setting a uuid while using mock pretender api
-        .set('id', Utils.uuidGenerator())
-        .save();
+        model.set('id', Utils.uuidGenerator()).save();
       this.transitionTo('trips');
     },
     cancel: function() {

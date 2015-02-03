@@ -2,8 +2,6 @@
 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
   <li><button {{action 'createTrip'}}>Create new trip</button></li>
 {{#each trip in controller}}
-  {{#with trip}}
-  <li>{{#link-to 'trip' trip}}Name: {{name}}, Date: {{readable-date tripDate}}, Distance: {{distance}} miles, Cost: {{cost}}{{/link-to}}</li>
-  {{/with}}
+  <li>{{#link-to 'trip' trip}}Name: {{trip.name}}, Date: {{readable-date trip.tripDate}}, Distance: {{trip.distance}} miles, Cost: {{trip.cost}}{{/link-to}}</li>
 {{/each}}
 </ul>

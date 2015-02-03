@@ -17,6 +17,10 @@ export default {
           fixtures.TRIPS[request.params.id]
         )];
       });
+
+      this.post('/trips', function(request) {
+        return[200, {'Content-Type': 'application/json'}, JSON.stringify(request.params)];
+      });
     });
   }
 };
