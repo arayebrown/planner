@@ -1,0 +1,39 @@
+{
+  "name": "planner",
+  "version": "0.0.1",
+  "description": "A web app for planning and collecting road trips.",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arayebrown/planner.git"
+  },
+  "keywords": [
+    "planner",
+    "road",
+    "trips",
+    "rv",
+    "readneck",
+    "cheap-beer",
+    "potty-chemical"
+  ],
+  "author": "Aaron R. Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arayebrown/planner/issues"
+  },
+  "homepage": "https://github.com/arayebrown/planner",
+  "dependencies": {
+    "convict": "^0.6.1",
+    "express": "^4.11.2",
+    "multer": "^0.1.7"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-nodemon": "^0.4.0",
+    "load-grunt-config": "^0.16.0"
+  }
+}
