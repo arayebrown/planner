@@ -2,9 +2,9 @@
   "name": "planner",
   "version": "0.0.1",
   "description": "A web app for planning and collecting road trips.",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
-    "start": "index.js"
+    "start": "./server/index.js"
   },
   "repository": {
     "type": "git",
