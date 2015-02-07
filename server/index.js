@@ -8,6 +8,8 @@
 var app = require('./app').app,
     conf = require('./config/convict-config');
 
+console.log('Boom!');
+
 app.listen(conf.get('port'), function (err) {
   if (err) {
     console.error(err.stack);

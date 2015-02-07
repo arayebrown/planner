@@ -6,22 +6,24 @@
 'use strict';
 
 var convict = require('convict'),
-    conf = convict({
-      'host': 'localhost',
-      'port': 8000,
-      'express': {
-        'x-powered-by': false,
-        'trust proxy': false,
-        'jsonp callback name': null,
-        'json replacer': null,
-        'json spaces': 0,
-        'case sensitive routing': false,
-        'strict routing': false,
-        'view cache': false,
-        'view engine': 'js',
-        'views': 'views'
-      }
-    });
+    conf;
+    
+conf = convict({
+  'env': {
+    'doc': 'The application environment',
+    'format': ['production', 'integration', 'development', 'test'],
+    'default': 'development',
+    'env': 'NODE_ENV'
+  },
+  'host': {
+    'default': 'localhost'
+  },
+  'port': {
+    'default': 8000
+  }
+});
+
+//load env-dependent configs
 
 conf.validate();
 
