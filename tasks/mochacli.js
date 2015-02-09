@@ -1,6 +1,6 @@
 /**
  * Aaron R. Brown © 2015
- * file: tasks/nodemon.js
+ * file: tasks/mochacli.js
  */
 
 'use strict';
@@ -15,7 +15,10 @@ module.exports = {
     env: {
       NODE_ENV: 'test'
     },
-    force: true
+    force: true,
+    require: [
+      'should'
+    ]
   },
   files: './server/test/**/*_test.js'
 };

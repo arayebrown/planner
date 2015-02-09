@@ -24,9 +24,16 @@ module.exports = function (grunt) {
       config: require('./package.json')
     }
   });
+
   grunt.registerTask('server', function () {
     grunt.task.run([
       'concurrent:monitor'
     ]);
-  }); 
+  });
+
+  grunt.registerTask('test', function () {
+    grunt.task.run([
+      'mochacli'
+    ]);
+  });
 };

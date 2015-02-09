@@ -4,7 +4,8 @@
   "description": "A web app for planning and collecting road trips.",
   "main": "./server/index.js",
   "scripts": {
-    "start": "./server/index.js"
+    "start": "./server/index.js",
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "grunt-nodemon": "^0.4.0",
     "load-grunt-config": "^0.16.0",
     "mocha": "^2.1.0",
-    "should": "^4.6.5"
+    "should": "^4.6.5",
+    "sinon": "^1.12.2"
   }
 }
