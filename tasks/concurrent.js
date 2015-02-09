@@ -7,6 +7,9 @@
 
 module.exports = {
   monitor: {
-    tasks: ['nodemon:dev']
+    tasks: ['nodemon:dev'],
+    options: {
+      logConcurrentOutput: true
+    }
   },
 };
