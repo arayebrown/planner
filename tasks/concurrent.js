@@ -7,7 +7,10 @@
 
 module.exports = {
   monitor: {
-    tasks: ['nodemon:dev'],
+    tasks: [
+      'nodemon:dev',
+      'shell:emberServe'
+    ],
     options: {
       logConcurrentOutput: true
     }

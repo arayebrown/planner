@@ -31,7 +31,7 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('test', function () {
+  grunt.registerTask('testServer', function () {
     grunt.task.run([
       'mochacli'
     ]);

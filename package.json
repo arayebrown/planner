@@ -5,7 +5,7 @@
   "main": "./server/index.js",
   "scripts": {
     "start": "./server/index.js",
-    "test": "grunt test"
+    "test": "grunt testServer"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "grunt-concurrent": "^1.0.0",
     "grunt-mocha-cli": "^1.12.0",
     "grunt-nodemon": "^0.4.0",
+    "grunt-shell-spawn": "^0.3.1",
     "load-grunt-config": "^0.16.0",
     "mocha": "^2.1.0",
     "should": "^4.6.5",
