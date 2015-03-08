@@ -1,3 +1,4 @@
+/* globals ok */
 import { test, moduleFor } from 'ember-qunit';
 
 moduleFor('route:trips', 'TripsRoute', {

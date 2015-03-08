@@ -9,6 +9,7 @@ module.exports = {
   dev: {
     script: 'index.js',
     options: {
+      verbose: true,
       cwd: './server',
       env: {
         PORT: '8000'
