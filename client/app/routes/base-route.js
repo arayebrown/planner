@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       if (title) {
         window.document.title = title;
       } else {
-        return true; // Bubble up!
+        return true;
       }
     },
     didTransition: function() {
