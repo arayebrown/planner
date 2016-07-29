@@ -1,0 +1,8 @@
+@import "settings";
+@import 'foundation';
+@include foundation-everything;
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}

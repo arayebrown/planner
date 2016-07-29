@@ -1,0 +1,7 @@
+<h2>Trips list</h2>
+<ul class="small-up-2 medium-up-3 large-up-4 no-bullet">
+  <li class="column"><button {{action 'createTrip'}}>Create new trip</button></li>
+{{#each trips as |trip|}}
+  <li class="column">{{#link-to 'trip' trip}}Name: {{trip.name}}, Date: {{moment-format trip.tripDate 'YYYY-MM-DD'}}, Distance: {{trip.distance}} miles, Cost: {{trip.cost}}{{/link-to}}</li>
+{{/each}}
+</ul>
