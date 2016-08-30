@@ -1,7 +1,0 @@
-<h2>Trips list</h2>
-<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-  <li><button {{action 'createTrip'}}>Create new trip</button></li>
-{{#each model as |trip|}}
-  <li>{{#link-to 'trip' trip}}Name: {{trip.name}}, Date: {{readable-date trip.tripDate}}, Distance: {{trip.distance}} miles, Cost: {{trip.cost}}{{/link-to}}</li>
-{{/each}}
-</ul>

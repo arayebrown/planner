@@ -1,5 +1,4 @@
 import BaseRoute from '../base-route';
-import Utils from '../../utils/utils';
 
 export default BaseRoute.extend({
   title: 'Create a Trip',
