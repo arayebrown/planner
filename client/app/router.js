@@ -1,16 +1,16 @@
 import Ember from 'ember';
 import config from './config/environment';
 
-var Router = Ember.Router.extend({
+const Router = Ember.Router.extend({
   location: config.locationType
 });
 
 Router.map(function() {
-  this.resource('trips', function() {
+  this.route('trips', {resetNamespace: true}, function() {
     this.route('new');
   });
-  this.resource('trip', { path: '/trips/:id' });
-  this.resource('map');
+  this.route('trip', { path: '/trips/:id' });
+  this.route('map');
 });
 
 export default Router;
